@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage("SCM checkout"){
 			steps{
-			git credentialsId: 'Ceejay0007', url: 'https://github.com/Ceejay0007/jinkens-work', branch: "master"
+			git 'https://github.com/javahometech/my-app', branch: "master"
 			}
 		stage("maven built"){
 			steps{
